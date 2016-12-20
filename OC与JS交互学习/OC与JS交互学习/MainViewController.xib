@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o65-84-hxX">
+                    <rect key="frame" x="128" y="186" width="118" height="30"/>
+                    <state key="normal" title="使用WKWebView"/>
+                    <connections>
+                        <action selector="useWKWebView:" destination="-1" eventType="touchUpInside" id="II8-DD-ng5"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43P-pj-L6k">
+                    <rect key="frame" x="133" y="106" width="109" height="30"/>
+                    <state key="normal" title="使用UIWebView"/>
+                    <connections>
+                        <action selector="useUIWebView:" destination="-1" eventType="touchUpInside" id="IrQ-qW-FxN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSe-1l-eoB">
+                    <rect key="frame" x="66" y="306" width="234" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="使用WKWebViewMessageHandler"/>
+                    <connections>
+                        <action selector="messageHandler" destination="-1" eventType="touchUpInside" id="NYR-Os-VEy"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDc-gU-mYm">
+                    <rect key="frame" x="85" y="372" width="203" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="使用webView-JavaScriptCore"/>
+                    <connections>
+                        <action selector="javaScriptCore" destination="-1" eventType="touchUpInside" id="xmz-dh-i8G"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="43P-pj-L6k" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="106" id="A0l-EF-0fa"/>
+                <constraint firstItem="o65-84-hxX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="G0z-zg-zNJ"/>
+                <constraint firstItem="o65-84-hxX" firstAttribute="top" secondItem="43P-pj-L6k" secondAttribute="bottom" constant="50" id="K3x-jp-Ml6"/>
+                <constraint firstItem="43P-pj-L6k" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="TOm-cU-cZ1"/>
+            </constraints>
+            <point key="canvasLocation" x="70" y="93"/>
+        </view>
+    </objects>
+</document>

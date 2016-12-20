@@ -1,0 +1,14 @@
+//
+//  PrefixHeader.pch
+//  JS_OC_Cordova
+//
+//  Created by zsf on 2016/12/20.
+//  Copyright © 2016年 zsf. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import <Foundation/Foundation.h>
+
+
+#endif /* PrefixHeader_pch */
